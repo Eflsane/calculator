@@ -1,3 +1,5 @@
+alert('Кэлькулятор версия 2!\nСчитаем вместе!');
+
 function ins(num) {
   document.getElementById('enter').value += num;
 }
