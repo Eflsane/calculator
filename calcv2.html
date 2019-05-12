@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible">
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .but {
+        width: 4em;
+        height: 4em;
+        font-size: 1.1rem;
+      }
+      #enter {
+        width: 8.9em;
+        height: 2em;
+        font-size: 2rem;
+      }
+      .main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background: linear-gradient(to right, red, blue);
+      }
+      header {
+        text-align: center;
+      }
+      .but {
+        background-color: rgba(0, 0, 255, 0.3);
+        color: white;
+      }
+    </style>
+    <title>Кэлькулятор</title>
+  </head>
+  <body>
+    <header>
+      <h1>Кэлькулятор версия 2!</h1>
+      <h2>Считаем вместе!</h2>
+    </header>
+    <div class="main">
+      <section class="inp">
+        <input type="text" name="enter" value="" placeholder="0" id="enter">
+        <input type="button" value="C" class="but" onclick="erase()">
+      </section>
+      <section class="buts">
+        <table>
+          <tr>
+            <td><input type="button" value="1" class="but" onclick="ins(1)"></td>
+            <td><input type="button" value="2" class="but" onclick="ins(2)"></td>
+            <td><input type="button" value="3" class="but" onclick="ins(3)"></td>
+            <td><input type="button" value="+" class="but" onclick="ins('+')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="4" class="but" onclick="ins(4)"></td>
+            <td><input type="button" value="5" class="but" onclick="ins(5)"></td>
+            <td><input type="button" value="6" class="but" onclick="ins(6)"></td>
+            <td><input type="button" value="-" class="but" onclick="ins('-')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="7" class="but" onclick="ins(7)"></td>
+            <td><input type="button" value="8" class="but" onclick="ins(8)"></td>
+            <td><input type="button" value="9" class="but" onclick="ins(9)"></td>
+            <td><input type="button" value="x" class="but" onclick="ins('*')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="0" class="but" onclick="ins(0)"></td>
+            <td><input type="button" value="." class="but" onclick="ins(.)"></td>
+            <td><input type="button" value="=" class="but" onclick="result()"></td>
+            <td><input type="button" value="/" class="but" onclick="ins('/')"></td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <script type="text/javascript" src="calc2.js">
+
+    </script>
+  </body>
+</html>
